@@ -3,7 +3,19 @@ import { prisma } from "../../../../prisma/client";
 
 export class GetUserUseCase{
     async execute(): Promise<User[]>{
-        const users = await prisma.user.findMany({});
+        const users = await prisma.user.findMany({
+            include:{
+                movie_rent:{
+                    select:{
+                        movie:{
+                            select:{
+                                title:true
+                            }
+                        }
+                    }
+                }
+            }
+        });
 
         return users;
     }

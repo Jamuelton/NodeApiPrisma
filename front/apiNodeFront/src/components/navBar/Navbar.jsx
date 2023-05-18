@@ -1,7 +1,7 @@
 export function Navbar(){
     return(
         <div className="grid grid-cols-12">
-            <div className="col-span-4 flex items-center w-screen h-[80px] bg-[#9980FA]">
+            <div className="col-span-4 flex items-center w-screen h-[80px] bg-[#FDA7DF]">
                 <p className="text-[#fff] font-bold text-[24px] mx-[32px]">
                     Aluguel de filmes
                 </p>

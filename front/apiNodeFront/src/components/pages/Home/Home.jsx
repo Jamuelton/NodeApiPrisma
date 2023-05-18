@@ -1,3 +1,4 @@
+import { Footer } from "../../footer/Footer";
 import { Navbar } from "../../navBar/Navbar";
 
 export function Home(){
@@ -7,9 +8,7 @@ export function Home(){
             <div>
                 conteudo principal
             </div>
-            <div>
-                footer
-            </div>
+            <Footer/>
         </div>
     )
 }
